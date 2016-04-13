@@ -1,3 +1,7 @@
-C:\Users\pc\IdeaProjects\qoantum-phonebook\src\main\java\com\qoantum\phonebook\common\Entity.java
-C:\Users\pc\IdeaProjects\qoantum-phonebook\src\main\java\com\qoantum\phonebook\common\RecordStatus.java
-C:\Users\pc\IdeaProjects\qoantum-phonebook\src\main\java\com\qoantum\phonebook\PhoneBookWebApp.java
+/home/qoantum/IdeaProjects/qoantum-phonebook/src/main/java/com/qoantum/phonebook/common/AbstractEntity.java
+/home/qoantum/IdeaProjects/qoantum-phonebook/src/main/java/com/qoantum/phonebook/common/RecordStatus.java
+/home/qoantum/IdeaProjects/qoantum-phonebook/src/main/java/com/qoantum/phonebook/orm/User.java
+/home/qoantum/IdeaProjects/qoantum-phonebook/src/main/java/com/qoantum/phonebook/orm/Group.java
+/home/qoantum/IdeaProjects/qoantum-phonebook/src/main/java/com/qoantum/phonebook/common/Entity.java
+/home/qoantum/IdeaProjects/qoantum-phonebook/src/main/java/com/qoantum/phonebook/orm/Role.java
+/home/qoantum/IdeaProjects/qoantum-phonebook/src/main/java/com/qoantum/phonebook/PhoneBookWebApp.java

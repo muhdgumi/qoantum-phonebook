@@ -1,3 +1,8 @@
-com\qoantum\phonebook\common\Entity.class
-com\qoantum\phonebook\common\RecordStatus.class
-com\qoantum\phonebook\PhoneBookWebApp.class
+com/qoantum/phonebook/orm/Role.class
+com/qoantum/phonebook/common/AbstractEntity.class
+com/qoantum/phonebook/orm/Group.class
+com/qoantum/phonebook/PhoneBookWebApp$1.class
+com/qoantum/phonebook/common/Entity.class
+com/qoantum/phonebook/common/RecordStatus.class
+com/qoantum/phonebook/PhoneBookWebApp.class
+com/qoantum/phonebook/orm/User.class

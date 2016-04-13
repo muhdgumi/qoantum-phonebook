@@ -1,0 +1,32 @@
+#=--------------------------- MAIN CONFIGURATION ----------------------------=#
+server:
+  context-path: /qoantum
+
+---
+#=--------------------------- DEV CONFIGURATION -----------------------------=#
+spring:
+  profiles: DEV
+server:
+  port: 0
+
+---
+#=--------------------------- TEST CONFIGURATION -----------------------------=#
+spring:
+  profiles: TEST
+  jpa:
+    database: POSTGRESQL
+    generate-dll: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: "jdbc:postgresql://localhost/postgres?characterEncoding=UTF-8&currentSchema=phonebook&searchpath=phonebook"
+    schema: phonebook
+    username: postgres
+    password: @postgres!
+server:
+  port: 0
+
+---
+#=--------------------------- PROD CONFIGURATION -----------------------------=#
+spring:
+  profiles: PROD
