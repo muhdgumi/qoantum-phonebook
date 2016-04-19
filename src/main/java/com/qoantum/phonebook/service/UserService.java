@@ -1,7 +1,17 @@
 package com.qoantum.phonebook.service;
 
+import com.qoantum.phonebook.orm.entity.User;
+
 /**
- * Created by qoantum on 4/16/16.
+ * User service
  */
-public class UserService {
+public interface UserService {
+
+    User createUser(final User user);
+
+    User getUser(final Long userId);
+
+    User updateUser(final User user);
+
+    void deleteUser(final Long userId);
 }

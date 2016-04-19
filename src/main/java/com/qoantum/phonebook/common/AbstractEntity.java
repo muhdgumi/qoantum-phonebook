@@ -1,5 +1,7 @@
 package com.qoantum.phonebook.common;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -8,6 +10,8 @@ import java.util.Objects;
 /**
  * An entity that will be extended by all entities
  */
+@Getter
+@Setter
 @MappedSuperclass
 @Access(AccessType.FIELD)
 public abstract class AbstractEntity implements Entity {

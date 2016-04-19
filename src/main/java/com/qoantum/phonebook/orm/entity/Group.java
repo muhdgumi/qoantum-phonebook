@@ -1,6 +1,8 @@
 package com.qoantum.phonebook.orm.entity;
 
 import com.qoantum.phonebook.common.AbstractEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
@@ -8,6 +10,8 @@ import java.util.List;
 /**
  * Create group
  */
+@Getter
+@Setter
 @Entity
 @Table(name = "T_GROUP")
 @Access(AccessType.FIELD)

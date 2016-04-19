@@ -1,12 +1,16 @@
 package com.qoantum.phonebook.orm.entity;
 
 import com.qoantum.phonebook.common.AbstractEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 /**
  * Role creation entity
  */
+@Getter
+@Setter
 @Entity
 @Access(AccessType.FIELD)
 @Table(name = "T_ROLE")

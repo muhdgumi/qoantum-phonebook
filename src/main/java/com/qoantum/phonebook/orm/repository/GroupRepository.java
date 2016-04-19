@@ -1,7 +1,10 @@
 package com.qoantum.phonebook.orm.repository;
 
+import com.qoantum.phonebook.orm.entity.Group;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
- * Created by qoantum on 4/16/16.
+ * Group repository
  */
-public interface GroupRepository {
+public interface GroupRepository extends JpaRepository<Group, Long> {
 }

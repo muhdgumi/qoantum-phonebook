@@ -1,7 +1,10 @@
 package com.qoantum.phonebook.orm.repository;
 
+import com.qoantum.phonebook.orm.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
- * Created by qoantum on 4/16/16.
+ * User repository
  */
-public interface UserRepository {
+public interface UserRepository extends JpaRepository<User, Long> {
 }

@@ -1,7 +1,10 @@
 package com.qoantum.phonebook.orm.repository;
 
+import com.qoantum.phonebook.orm.entity.Role;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
- * Created by qoantum on 4/16/16.
+ * Role repository
  */
-public interface RoleRepository {
+public interface RoleRepository extends JpaRepository<Role, Long> {
 }

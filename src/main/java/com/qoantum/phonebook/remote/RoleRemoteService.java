@@ -1,7 +1,17 @@
 package com.qoantum.phonebook.remote;
 
+import com.qoantum.phonebook.api.RoleDto;
+
 /**
- * Created by qoantum on 4/16/16.
+ * Remote service
  */
-public class RoleRemoteService {
+public interface RoleRemoteService {
+
+    RoleDto createRole(final RoleDto roleDto);
+
+    RoleDto getRole(final Long roleId);
+
+    RoleDto updateRole(final RoleDto roleDto);
+
+    void deleteRole(final Long roleId);
 }

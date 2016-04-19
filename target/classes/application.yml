@@ -1,11 +1,24 @@
 #=--------------------------- MAIN CONFIGURATION ----------------------------=#
 server:
-  context-path: /qoantum
+  context-path: /qoantum/phonebook
+
+spring:
+  profiles:
+    active: TEST
 
 ---
 #=--------------------------- DEV CONFIGURATION -----------------------------=#
 spring:
   profiles: DEV
+#  jpa:
+#    database: H2
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: create-drop
+#  datasource:
+#      url: "jdbc:postgresql://localhost/qoantum?characterEncoding=UTF-8&currentSchema=public&searchpath=public"
+#      username: postgres
+#      password: '@postgres!'
 server:
   port: 0
 
@@ -14,17 +27,19 @@ server:
 spring:
   profiles: TEST
   jpa:
+    properties:
+      hibernate:
+        default_schema: phonebook
     database: POSTGRESQL
-    generate-dll: true
+    generate-ddl: true
     hibernate:
       ddl-auto: update
   datasource:
-    url: "jdbc:postgresql://localhost/postgres?characterEncoding=UTF-8&currentSchema=phonebook&searchpath=phonebook"
-    schema: phonebook
+    url: "jdbc:postgresql://localhost/qoantum?characterEncoding=UTF-8&currentSchema=phonebook&searchpath=phonebook"
     username: postgres
-    password: @postgres!
+    password: '@postgres!'
 server:
-  port: 0
+  port: 7070
 
 ---
 #=--------------------------- PROD CONFIGURATION -----------------------------=#

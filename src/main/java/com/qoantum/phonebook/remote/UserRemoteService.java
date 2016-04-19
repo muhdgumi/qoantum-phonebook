@@ -1,7 +1,17 @@
 package com.qoantum.phonebook.remote;
 
+import com.qoantum.phonebook.api.UserDto;
+
 /**
- * Created by qoantum on 4/16/16.
+ * Remote service
  */
-public class UserRemoteService {
+public interface UserRemoteService {
+
+    UserDto createUser(final UserDto userDto);
+
+    UserDto getUser(final Long userId);
+
+    UserDto updateUser(final UserDto userDto);
+
+    void deleteUser(final Long userId);
 }
