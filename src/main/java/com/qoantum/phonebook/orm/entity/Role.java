@@ -1,4 +1,4 @@
-package com.qoantum.phonebook.orm;
+package com.qoantum.phonebook.orm.entity;
 
 import com.qoantum.phonebook.common.AbstractEntity;
 
