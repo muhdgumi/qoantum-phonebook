@@ -4,12 +4,7 @@ server:
 
 spring:
   profiles:
-    active: DEV
-  data:
-    elasticsearch:
-      cluster-name: local-node
-      cluster-nodes: 192.168.0.100:9300
-
+    active: TEST
 ---
 #=--------------------------- DEV CONFIGURATION -----------------------------=#
 spring:
@@ -24,7 +19,7 @@ spring:
 #      username: postgres
 #      password: '@postgres!'
 server:
-  port: 0
+  port: 7070
 
 ---
 #=--------------------------- TEST CONFIGURATION -----------------------------=#
@@ -42,6 +37,13 @@ spring:
     url: "jdbc:postgresql://localhost/qoantum?characterEncoding=UTF-8&currentSchema=phonebook&searchpath=phonebook"
     username: postgres
     password: '@postgres!'
+  data:
+    elasticsearch:
+      cluster-name: local-node
+      cluster-nodes: 192.168.0.10:9300
+
+server:
+  port: 7070
 
 ---
 #=--------------------------- PROD CONFIGURATION -----------------------------=#

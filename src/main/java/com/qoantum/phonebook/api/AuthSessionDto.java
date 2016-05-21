@@ -1,11 +1,10 @@
 package com.qoantum.phonebook.api;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -27,11 +26,18 @@ public class AuthSessionDto implements Serializable {
 
     private String userName;
 
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date createdDate;
 
+    @XmlElementWrapper(name = "roles")
+    @XmlElement(name = "role")
     private List<String> roles;
 
+    @XmlElementWrapper(name = "groups")
+    @XmlElement(name = "group")
     private List<Long> groups;
 
+    public boolean isRolePresent(final String role) { return roles.contains(role); }
 
+    public boolean isMemberOf(final Long groupId) { return groups.contains(groupId); }
 }
