@@ -1,4 +1,4 @@
-package com.qoantum.phonebook.config;
+package com.qoantum.phonebook.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
